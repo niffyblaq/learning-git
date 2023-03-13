@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+</head>
+<style>
+    @media screen and (max-width: 600px) {
+
+
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 361px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 330px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 120px;
+            margin-left: 17px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 341px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 65px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 390px) {
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 440px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 390px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 390px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 375px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 344px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 414px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 414px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 382px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 390px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 80px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+
+    @media screen and (min-width: 540px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 375px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 344px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 375px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 344px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 912px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 375px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 344px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 375px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 344px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(1, 1, 96);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            font-size: 30px;
+            color: rgb(1, 1, 96);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        h2 {
+            color: rgb(12, 0, 65);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(0, 0, 32);
+            text-align: center;
+        }
+
+        .href1 {
+            background-color: rgb(12, 0, 65);
+            color: whitesmoke;
+            padding: 13px;
+            border-radius: 26px;
+
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+
+        img {
+            margin-top: 70px;
+            height: 300px;
+            width: 375px;
+            margin-left: -9px;
+        }
+
+        main {
+            color: rgb(12, 0, 65);
+            font-size: 33px;
+            margin-top: 56px;
+            text-align: center;
+
+
+
+
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: rgb(12, 0, 65);
+            height: 200px;
+            width: 344px;
+            margin-left: -9px;
+            margin-top: -20px;
+            padding: 14px 16px;
+
+        }
+
+        .flex-container>div {
+            color: whitesmoke;
+            margin-top: 130px;
+            margin-left: 25px;
+            gap: 20px;
+            font-size: 20px;
+            border-bottom: 6px solid rgb(198, 198, 198);
+
+
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            width: 356px;
+            margin-left: -8px;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: white;
+            border-radius: 10px;
+            height: 370px;
+            border: 1px solid rgb(205, 205, 205);
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .src1 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src2 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src3 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        .src4 {
+            width: 100px;
+            height: 100px;
+            margin-right: 160px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+</style>
+
+<body>
+
+   
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#business">Business management</a>
+            <a href="#contact">Contact</a>
+            <a href="#sign up">sign up</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div style="padding-left:16px">
+
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <h2>Loans and financial services for small businesses</h2>
+        <p>Loans, payment options and business tools to help grow your business</p>
+        <a class="href1" href="https//:www.Get Started.com">Get Started</a>
+        <img
+            src="https://media.istockphoto.com/id/1212842798/photo/senior-woman-shopping-at-the-vegetable-marketplace.jpg?s=612x612&w=0&k=20&c=2MftlmdBSRxbVOzqCF5L0dxfALuu8FWCkfxn4Ngombw=">
+
+
+        <div class="flex-container">
+
+
+            <div>
+                25K+
+                <h3>Customers</h3>
+            </div>
+            <div>N2M+
+                <h3>Loans collected</h3>
+            </div>
+            <div>12+
+                <h3>Partnership</h3>
+            </div>
+
+        </div>
+        <main>What you get</main>
+        <p>Flexible loan and businesses tools that help your business thrive.</p>
+        <div class="grid-container">
+            <div><img class="src1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk7iv_sMLsNYVTBCT49G6xNMWau9wRXGy-Z0DEq9Z7YnHMp7kSViXqNcpMi6agQ007w_Y&usqp=CAU">
+                <h1>Working capital overdraft</h1>
+                <p>Stay ahead of your cash flow to keep your business running</p>
+            </div>
+            <div><img class="src2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLysWgCz9tvuje2Kzr3DSpytOhIX3OSE9xTQ&usqp=CAU">
+                <h1>Low interest rate</h1>
+                <p>Enjoy low interest rates on your loan</p>
+            </div>
+            <div><img class="src3"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp7-GGltNuMvstwFdlMxPmAhqEgNgqtuFgg&usqp=CAU">
+                <h1>High customer satisfaction</h1>
+                <p>Customer satisfaction is our goal</p>
+            </div>
+            <div><img class="src4" src="https://static.thenounproject.com/png/1875512-200.png">
+                <h1>Simple book keeping</h1>
+                <p>Create invoices, control budgets and do more with our business tools.</p>
+            </div>
+
+        </div>
+    </body>
+
+
+</html>
