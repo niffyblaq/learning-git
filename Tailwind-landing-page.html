@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://www.flaticon.com/free-icon/is-approximately-equal-to-symbol_43101">
+
+    <title>Tailwind-landing-page</title>
 </head>
 <style>
     body {
-        background-image: url("https://www.technologent.com/hubfs/cloud-migration-guide.jpg");
-        background-size: cover;
-        background-color: rgb(0, 2, 19);
+
+        background-color: rgb(18, 24, 39);
+        background-repeat: repeat-y;
 
 
     }
 
+
+
     img {
         width: 80px;
         border-radius: 20em;
+
     }
 
     .topnav {
@@ -73,6 +78,13 @@
 
     }
 
+    .img12 {
+        position: absolute;
+        width: 580px;
+        height: 480px;
+        right: 20px;
+        top: 171px;
+    }
 
     .btn {
         background-color: rgb(3, 178, 172);
@@ -80,12 +92,12 @@
         border-radius: 20em;
         color: whitesmoke;
         padding: 10px;
-        margin-top: 90px;
     }
 
     .href7 {
         background-color: rgb(17, 0, 0);
         border-radius: 20em;
+        margin-top: 100px;
         padding: 10px;
         text-decoration: none;
         color: whitesmoke;
@@ -708,7 +720,7 @@
             background-color: transparent;
 
         }
-    
+
         .topnav a {
             float: left;
             display: block;
@@ -785,7 +797,7 @@
             color: whitesmoke;
             margin-top: 40px;
             line-height: 2px;
-            font-size: 25px;
+            font-size: 18px;
         }
 
         input {
@@ -808,7 +820,7 @@
 
         main {
             color: rgb(4, 252, 244);
-            font-size: 20px;
+            font-size: 15px;
             margin-top: 50px;
 
         }
@@ -827,13 +839,18 @@
             color: whitesmoke;
             width: 120px;
         }
+
+        .img12 {
+            position: absolute;
+            width: 480px;
+            height: 430px;
+            right: 20px;
+            top: 130px;
+        }
     }
 
     @media screen and (min-width: 1280px) {
-        body {
-            background-size: 135em;
-            background-repeat: no-repeat;
-        }
+
 
         .topnav {
             overflow: hidden;
@@ -843,11 +860,12 @@
         }
 
         .topnav a {
+            position: relative;
             float: left;
             display: block;
             color: rgb(203, 202, 202);
             text-align: center;
-            padding: 14px 53px;
+            padding: 19px 69px;
             text-decoration: none;
             font-size: 20px;
         }
@@ -860,7 +878,7 @@
         .topnav a.active {
             background-color: transparent;
             font-size: 30px;
-            color: rgb(1, 1, 96);
+            
         }
 
 
@@ -917,13 +935,12 @@
         p {
             color: whitesmoke;
             margin-top: 40px;
-            line-height: 1px;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         input {
             border-radius: 2px;
-            margin-top: 40px;
+            margin-top: 30px;
             height: 30px;
             width: 300px;
             border: 2px solid white;
@@ -940,8 +957,9 @@
         }
 
         main {
-            color: rgb(4, 252, 244);
-            font-size: 22px;
+            color: #04fcf4;
+
+            font-size: 16px;
             margin-top: 50px;
 
         }
@@ -960,26 +978,30 @@
             color: whitesmoke;
             width: 120px;
         }
-    
+
+        .img12 {
+            position: absolute;
+            width: 580px;
+            height: 529px;
+            right: 20px;
+            top: 171px;
+        }
+
     }
 </style>
 
 <body>
+
     <div class="topnav" id="myTopnav">
-        <a class="active" href="#"><i class="fa fa-exchange"
+        <a class="active" href="#"> <i class="fa fa-exchange"
                 style="color: rgb(3, 178, 172); font-size: 40px; margin-top: -20px;"></i>
-            <a href="#product">Product</a>
+            <a href="#product">product</a>
             <a href="#features">Features</a>
             <a href="#market place">market place</a>
-            <a href="#features">features</a>
-            <a href="#login">Login</a>
+            <a href="#log in">log in</a>
             <a class="href3" href="#start new trial">Start new trial</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-
+            <a href="javascript:void(0):" class="icon" onclick="myFunction()">
             </a>
-    </div>
-
-    <div style="padding-left:16px">
 
     </div>
 
@@ -994,6 +1016,7 @@
         }
 
     </script>
+
     <button class="btn" type="button">We're hiring</button>
     <a class="href7" href="https//:www.start free trial.com">Visit our careers page</a>
 
@@ -1003,11 +1026,13 @@
 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
     <p>Blanditiis inventore perferendis tempora illum eos,
-        maiores minus hic.</p>
+        maiores minus.</p>
     <input type="input" name="Enter your email">
     <a class="href2" href="https//:www.start free trial.com">Start free trial</a>
     <main>Start your free 16 days trial, no credit card necessary, by providing your
-        email you agree to our <a class="href1" href="terms and condition">terms of service</a></main>
+        email you agree to our <a class="href1" href="terms and condition">terms of service</a>
+    </main>
+    <img class="img12" src="C:\Users\User\Downloads\Hero Image.png">
 
 
 </body>
