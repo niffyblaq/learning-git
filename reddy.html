@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDMI 13</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    @media screen and (min-width: 360px) {
+        body:hover {
+            background-color: palegreen;
+        }
+
+        .box1 {
+            background-color: black;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            height: 630px;
+            box-shadow: rgba(72, 130, 202, 0.8) 0 0 90px 20px;
+            width: 330px;
+            border-radius: 25px;
+            border: 2px solid rgb(42, 42, 42);
+            margin-left: 5px;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(208, 9, 9, 0), rgba(0, 0, 0, 0.4));
+            margin-top: 25px;
+        }
+
+        .box1:hover {
+            background-color: rgba(20, 20, 20, 0.8);
+            box-shadow: none;
+
+
+        }
+
+        .glow:box1 {
+            box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+        }
+
+        .box2 {
+            background-color: rgb(10, 10, 10);
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            height: 194px;
+            width: 170px;
+
+        }
+
+
+
+        .box3 {
+            margin-left: 2px;
+            margin-top: -95px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box4 {
+            margin-left: -10px;
+            margin-top: 53px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box5 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 28px;
+            margin-left: 29px;
+        }
+
+        .box6 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .box7 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            margin-top: 10px;
+            margin-left: 30px;
+            border-radius: 20em;
+
+        }
+
+        .box8 {
+            background-color: rgb(7, 6, 6);
+            height: 214px;
+            width: 2px;
+            margin-left: 100px;
+            margin-top: -10px;
+        }
+
+        .box9 {
+            background-color: rgb(7, 6, 6);
+            height: 2px;
+            width: 80px;
+            margin-left: 100px;
+            margin-top: -110px;
+        }
+
+        .box10 {
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 80px;
+            margin-left: 34px;
+        }
+
+        p {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h4 {
+            color: white;
+            margin-left: 97px;
+            margin-top: -5px;
+            transform: rotateZ(90deg);
+            font-size: 13px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .box13 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 20em;
+
+        }
+
+        .src2 {
+            margin-top: -25px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src3 {
+            margin-top: -2px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src4 {
+            width: 50px;
+            height: 50px;
+            margin-top: -15px;
+            margin-left: 75px;
+        }
+
+        main {
+            color: black;
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            color: rgb(61, 60, 60);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 55px;
+            margin-left: -15px;
+            transform: rotateZ(90deg);
+
+        }
+
+    }
+
+    @media screen and (min-width: 375px) {
+        body:hover {
+            background-color: palegreen;
+        }
+
+        .box1 {
+            background-color: black;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            height: 630px;
+            box-shadow: rgba(72, 130, 202, 0.8) 0 0 90px 20px;
+            width: 341px;
+            border-radius: 25px;
+            border: 2px solid rgb(42, 42, 42);
+            margin-left: 5px;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(208, 9, 9, 0), rgba(0, 0, 0, 0.4));
+            margin-top: 25px;
+        }
+
+        .box1:hover {
+            background-color: rgba(20, 20, 20, 0.8);
+            box-shadow: none;
+
+
+        }
+
+        .glow:box1 {
+            box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+        }
+
+        .box2 {
+            background-color: rgb(10, 10, 10);
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            height: 194px;
+            width: 170px;
+
+        }
+
+
+
+        .box3 {
+            margin-left: 2px;
+            margin-top: -95px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box4 {
+            margin-left: -10px;
+            margin-top: 53px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box5 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 28px;
+            margin-left: 29px;
+        }
+
+        .box6 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .box7 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            margin-top: 10px;
+            margin-left: 30px;
+            border-radius: 20em;
+
+        }
+
+        .box8 {
+            background-color: rgb(7, 6, 6);
+            height: 214px;
+            width: 2px;
+            margin-left: 100px;
+            margin-top: -10px;
+        }
+
+        .box9 {
+            background-color: rgb(7, 6, 6);
+            height: 2px;
+            width: 80px;
+            margin-left: 100px;
+            margin-top: -110px;
+        }
+
+        .box10 {
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 80px;
+            margin-left: 34px;
+        }
+
+        p {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h4 {
+            color: white;
+            margin-left: 97px;
+            margin-top: -5px;
+            transform: rotateZ(90deg);
+            font-size: 13px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .box13 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 20em;
+
+        }
+
+        .src2 {
+            margin-top: -25px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src3 {
+            margin-top: -2px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src4 {
+            width: 50px;
+            height: 50px;
+            margin-top: -15px;
+            margin-left: 75px;
+        }
+
+        main {
+            color: black;
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            color: rgb(61, 60, 60);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 55px;
+            margin-left: -15px;
+            transform: rotateZ(90deg);
+
+        }
+
+    }
+
+    @media screen and (min-width: 390px) {
+        body:hover {
+            background-color: palegreen;
+        }
+
+        .box1 {
+            background-color: black;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            height: 700px;
+            box-shadow: rgba(72, 130, 202, 0.8) 0 0 90px 20px;
+            width: 341px;
+            border-radius: 25px;
+            border: 2px solid rgb(42, 42, 42);
+            margin-left: 5px;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(208, 9, 9, 0), rgba(0, 0, 0, 0.4));
+            margin-top: 80px;
+        }
+
+        .box1:hover {
+            background-color: rgba(20, 20, 20, 0.8);
+            box-shadow: none;
+
+
+        }
+
+        .glow:box1 {
+            box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+        }
+
+        .box2 {
+            background-color: rgb(10, 10, 10);
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            height: 194px;
+            width: 170px;
+
+        }
+
+
+
+        .box3 {
+            margin-left: 2px;
+            margin-top: -95px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box4 {
+            margin-left: -10px;
+            margin-top: 53px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box5 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 28px;
+            margin-left: 29px;
+        }
+
+        .box6 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .box7 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            margin-top: 10px;
+            margin-left: 30px;
+            border-radius: 20em;
+
+        }
+
+        .box8 {
+            background-color: rgb(7, 6, 6);
+            height: 214px;
+            width: 2px;
+            margin-left: 100px;
+            margin-top: -10px;
+        }
+
+        .box9 {
+            background-color: rgb(7, 6, 6);
+            height: 2px;
+            width: 80px;
+            margin-left: 100px;
+            margin-top: -110px;
+        }
+
+        .box10 {
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 80px;
+            margin-left: 34px;
+        }
+
+        p {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h4 {
+            color: white;
+            margin-left: 97px;
+            margin-top: -5px;
+            transform: rotateZ(90deg);
+            font-size: 13px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .box13 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 20em;
+
+        }
+
+        .src2 {
+            margin-top: -25px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src3 {
+            margin-top: -2px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src4 {
+            width: 50px;
+            height: 50px;
+            margin-top: -15px;
+            margin-left: 75px;
+        }
+
+        main {
+            color: black;
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            color: rgb(61, 60, 60);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 55px;
+            margin-left: -15px;
+            transform: rotateZ(90deg);
+
+        }
+
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        body:hover {
+            background-color: palegreen;
+        }
+
+        .box1 {
+            background-color: black;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            height: 630px;
+            box-shadow: rgba(72, 130, 202, 0.8) 0 0 90px 70px;
+            width: 350px;
+            border-radius: 25px;
+            border: 2px solid rgb(42, 42, 42);
+            margin-left: 530px;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(208, 9, 9, 0), rgba(0, 0, 0, 0.4));
+            margin-top: 25px;
+        }
+
+        .box1:hover {
+            background-color: rgba(20, 20, 20, 0.8);
+            box-shadow: none;
+
+
+        }
+
+        .glow:box1 {
+            box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+        }
+
+        .box2 {
+            background-color: rgb(10, 10, 10);
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            height: 194px;
+            width: 170px;
+
+        }
+
+
+
+        .box3 {
+            margin-left: 2px;
+            margin-top: -95px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box4 {
+            margin-left: -10px;
+            margin-top: 53px;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 20em;
+            border: 10px solid rgb(16, 16, 16);
+            outline-style: double;
+            outline-color: black;
+
+        }
+
+        .box5 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 28px;
+            margin-left: 29px;
+        }
+
+        .box6 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            border-radius: 20em;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .box7 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 8px;
+            width: 8px;
+            margin-top: 10px;
+            margin-left: 30px;
+            border-radius: 20em;
+
+        }
+
+        .box8 {
+            background-color: rgb(7, 6, 6);
+            height: 214px;
+            width: 2px;
+            margin-left: 100px;
+            margin-top: -10px;
+        }
+
+        .box9 {
+            background-color: rgb(7, 6, 6);
+            height: 2px;
+            width: 80px;
+            margin-left: 100px;
+            margin-top: -110px;
+        }
+
+        .box10 {
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 70px;
+            margin-left: 34px;
+        }
+
+        p {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h4 {
+            color: white;
+            margin-left: 97px;
+            margin-top: -5px;
+            transform: rotateZ(90deg);
+            font-size: 13px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .box13 {
+            background-color: black;
+            border: 1px solid rgb(35, 35, 35);
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 20em;
+
+        }
+
+        .src2 {
+            margin-top: -25px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src3 {
+            margin-top: -2px;
+            filter: brightness(50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 20em;
+            margin-left: 89px;
+
+        }
+
+        .src4 {
+            width: 50px;
+            height: 50px;
+            margin-top: -15px;
+            margin-left: 75px;
+        }
+
+        main {
+            color: black;
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            color: rgb(61, 60, 60);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 65px;
+            margin-left: -15px;
+            transform: rotateZ(90deg);
+
+        }
+    }
+</style>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+
+            <div class="box8">
+            </div>
+            <div class="box9"></div>
+            <div class="box3">
+                <div class="box5">
+                    <img class="src2" src="https://media.cdnandroid.com/item_images/585775/imagen-hd-camera-0ori.jpg">
+                    <img class="src3" src="https://media.cdnandroid.com/item_images/585775/imagen-hd-camera-0ori.jpg">
+                </div>
+                <div class="box4">
+
+                    <div class="box6">
+                        <h4>50MP</h4>
+
+                    </div>
+                    <div class="box7"></div>
+
+                </div>
+
+                <div class="box1-back">
+
+                </div>
+                <div class="box10">
+                    <p> C E</p>
+
+                    <img class="src4"
+                        src="https://www.pngitem.com/pimgs/m/200-2009288_bin-recycle-bin-trashcan-no-trash-trash-rubbish.png">
+                    <main>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                        reprehenderit ullam animi
+                        dolor nostrum aliquid repellendus.</main>
+                </div>
+                <h1>
+                    <span style="color:grey">R</span>
+                    <span style="color:gray">e</span>
+                    <span style="color:cyan">d</span>
+                    <span style="color:grey">m</span>
+                    <span style="color:gray">i</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

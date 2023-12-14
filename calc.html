@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>CALCULATOR</title>
+</head>
+<style>
+    body {
+        overflow-x: hidden;
+    }
+
+    @media screen and (min-width: 280px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 209px;
+            height: 380px;
+            margin-left: 3px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 110%;
+            height: 60px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            margin-left: -12px;
+            font-weight: normal;
+            color: white;
+            border-radius: 6px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 50px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 50px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 20px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -3px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 360px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 286px;
+            height: 500px;
+            margin-left: 3px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 105%;
+            height: 90px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 6px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 68px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 68px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 30px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 375px) {
+        body {
+            background-color: #2e2e2e;
+            overflow-x: hidden;
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 304px;
+            height: 530px;
+            margin-left: -1px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 106%;
+            height: 80px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 6px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 73px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 74px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 20em;
+            font-size: 30px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 390px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 316px;
+            height: 580px;
+            margin-left: 5px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 76px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 79px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 30px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 393px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 314px;
+            height: 550px;
+            margin-left: 2px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 103%;
+            height: 90px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            margin-left: -6px;
+            border-radius: 6px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 76px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 76px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 33px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 412px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 336px;
+            height: 607px;
+            margin-left: 5px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 81px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 83px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 31px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 414px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 336px;
+            height: 607px;
+            margin-left: 5px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 80px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 83px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 31px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+
+
+    @media screen and (min-width: 540px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 462px;
+            height: 760px;
+            margin-left: 5px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 33px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 112px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 112px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 31px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 691px;
+            height: 1100px;
+            margin-left: 5px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 170px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 53px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 170px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 170px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 51px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 50px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 820px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 748px;
+            height: 1200px;
+            margin-left: 5px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 190px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 53px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 180px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 180px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 56px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 50px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 912px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 822px;
+            height: 1300px;
+            margin-left: 9px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 190px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 53px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 200px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 200px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 56px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 50px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 935px;
+            height: 1380px;
+            margin-left: 9px;
+            margin-top: 50px;
+            border-radius: 2px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 100%;
+            height: 190px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 53px;
+            margin-top: 30px;
+            font-weight: normal;
+            color: white;
+            border-radius: 8px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 230px;
+            border-top: 2px solid rgb(43, 43, 43);
+            height: 220px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 56px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 10px;
+            border-top: 5px solid grey;
+            height: 10px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+            font-size: 50px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -5px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        body {
+            background-color: rgb(46, 46, 46);
+            overflow-x: hidden;
+
+        }
+
+        .cont {
+
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .calsi {
+            background-color: rgb(31, 31, 31);
+            width: 1500px;
+            height: 2280px;
+            margin-left: 1780px;
+            margin-top: 220px;
+            border-radius: 7px;
+            padding: 25px;
+        }
+
+        .calsi:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+
+        #inp {
+            position: relative;
+            width: 90%;
+            height: 350px;
+            padding: 8px 0px;
+            text-align: center;
+            font-size: 100px;
+            margin-top: 50px;
+            font-weight: normal;
+            color: white;
+            border-radius: 20px;
+            border-style: groove;
+            background: rgb(51, 51, 51);
+            font-family: "Sofia", sans-serif;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: rgb(22, 22, 22);
+            }
+
+            50% {
+                background-color: rgb(10, 10, 10);
+            }
+
+            100% {
+                background-color: rgb(43, 43, 43);
+            }
+        }
+
+
+        .btns {
+            position: relative;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .btns button {
+            width: 353px;
+            border-top: 6px solid rgb(43, 43, 43);
+            height: 353px;
+            background-color: rgb(24, 24, 24);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            border-radius: 20em;
+            font-size: 100px;
+        }
+
+        .btns button:hover {
+            color: gold;
+        }
+
+        button {
+            width: 70px;
+            border-top: 5px solid grey;
+            height: 60px;
+            background-color: rgb(43, 43, 43);
+            color: whitesmoke;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-family: "Sofia", sans-serif;
+            color: rgb(104, 104, 104);
+            font-family: "Sofia", sans-serif;
+
+            font-size: 100px;
+        }
+
+        h1 {
+            color: whitesmoke;
+            margin-top: 60px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -350px;
+            font-size: 110px;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: gold;
+            text-decoration: underline;
+            text-decoration-color: gold;
+        }
+    }
+</style>
+
+<body>
+    <h1>NEWIE'S CALSI</h1>
+    <div class="cont">
+        <div class="calsi">
+            <input type="text" id="inp" placeholder="newie's calc" readonly="">
+            <div class="btns">
+                <button onclick="cls()">AC</button>
+                <button onclick="percentage()">%</button>
+                <button onclick="AT_add('^')">^</button>
+                <button onclick="AT_add('/')">/</button>
+                <button onclick="AT_add(7)">7</button>
+                <button onclick="AT_add(8)">8</button>
+                <button onclick="AT_add(9)">9</button>
+                <button onclick="AT_add('*')">*</button>
+                <button onclick="AT_add(4)">4</button>
+                <button onclick="AT_add(5)">5</button>
+                <button onclick="AT_add(6)">6</button>
+                <button onclick="AT_add('-')">-</button>
+                <button onclick="AT_add(1)">1</button>
+                <button onclick="AT_add(2)">2</button>
+                <button onclick="AT_add(3)">3</button>
+                <button onclick="AT_add('+')">+</button>
+                <button onclick="cancel()">(x)</button>
+                <button onclick="AT_add(0)">0</button>
+                <button onclick="AT_add('.')">.</button>
+                <button onclick="exe()">=</button>
+
+            </div>
+            <script>
+                var val = document.getElementById("inp");
+
+                function AT_add(v) {
+                    val.value += v;
+                }
+
+                function percentage() {
+                    val.value = "";
+                }
+
+                function cls() {
+                    val.value = "";
+                }
+
+                function exe() {
+                    val.value = eval(val.value);
+                }
+
+
+                function cancel() {
+                    val.value = val.value.substr(0, val.value.length - 1);
+                }
+            </script>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

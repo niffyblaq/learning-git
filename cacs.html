@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <title>CALCULATOR</title>
+</head>
+<style>
+    body {
+        background-color: rgb(6, 6, 6);
+
+    }
+
+    .cont {
+
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .calsi {
+        background-color: goldenrod;
+        width: 295px;
+        height: 405px;
+        margin-left: 450px;
+        margin-top: 50px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+
+
+    #inp {
+        position: relative;
+        width: 98%;
+        height: 70px;
+        padding: 8px 0px;
+        text-align: center;
+        font-size: 22px;
+        font-family: arial;
+        font-weight: normal;
+        font-family: "Sofia", sans-serif;
+        border-style: groove;
+        border-color: black;
+        background: goldenrod;
+
+    }
+
+    .btns {
+        position: relative;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .btns button {
+        width: 70px;
+        border-top: 6px solid rgb(6, 6, 6);
+        height: 60px;
+        background-color: rgb(3, 3, 3);
+        font-family: "Sofia", sans-serif;
+        color: goldenrod;
+        border-radius: 20em;
+        font-size: 24px;
+    }
+
+
+    button {
+        width: 70px;
+        border-top: 5px solid grey;
+        height: 60px;
+        background-color: rgb(18, 15, 15);
+        color: whitesmoke;
+        font-size: 30px;
+    }
+
+    ::placeholder {
+        font-family: "Sofia", sans-serif;
+        color: black;
+        font-size: 30px;
+    }
+    h1{
+        color: grey;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>NEWIE'S CALSI</h1>
+    <div class="cont">
+        <div class="calsi">
+            <input type="text" id="inp" placeholder="0" readonly="">
+            <div class="btns">
+                <button onclick="cls()">AC</button>
+                <button onclick="AT_add('+/-')">+/-</button>
+                <button onclick="AT_add('%')">%</button>
+                <button onclick="AT_add('/')">/</button>
+                <button onclick="AT_add(7)">7</button>
+                <button onclick="AT_add(8)">8</button>
+                <button onclick="AT_add(9)">9</button>
+                <button onclick="AT_add('*')">*</button>
+                <button onclick="AT_add(4)">4</button>
+                <button onclick="AT_add(5)">5</button>
+                <button onclick="AT_add(6)">6</button>
+                <button onclick="AT_add('-')">-</button>
+                <button onclick="AT_add(1)">1</button>
+                <button onclick="AT_add(2)">2</button>
+                <button onclick="AT_add(3)">3</button>
+                <button onclick="AT_add('+')">+</button>
+                <button onclick="cancel()">x</button>
+                <button onclick="AT_add(0)">0</button>
+                <button onclick="AT_add('.')">.</button>
+                <button onclick="exe()">=</button>
+
+            </div>
+            <script>
+                var val = document.getElementById("inp");
+
+                function AT_add(v) {
+                    val.value += v;
+                }
+
+
+                function cls() {
+                    val.value = "";
+                }
+
+                function exe() {
+                    val.value = eval(val.value);
+                }
+
+
+                function cancel() {
+                    val.value = val.value.substr(0, val.value.length - 1);
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
