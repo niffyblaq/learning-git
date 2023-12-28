@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:ital,wght@0,400;0,500;1,400&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+    <title>ssjStitches</title>
+
+</head>
+
+<style>
+    body {
+        background-color: whitesmoke;
+        overflow-x: hidden;
+    }
+
+    .topnav {
+        background-color: black;
+        margin-left: -10px;
+        margin-top: -10px;
+        height: 860px;
+        width: 1370px;
+        overflow: hidden;
+
+
+    }
+
+    .topnav a {
+        float: right;
+        display: block;
+        color: rgb(248, 241, 228);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'poppins', sans-serif;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+
+    .topnav a.active {
+        float: left;
+        display: block;
+        font-size: 30px;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px rgb(252, 169, 3);
+        text-decoration: none;
+        font-family: 'Kanit', sans-serif;
+        margin-left: 150px;
+    }
+
+    .topnav .icon {
+
+        display: hidden;
+        background-color: rgb(1, 1, 103);
+    }
+
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        margin-top: -2px;
+        display: none;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+
+    }
+
+
+    h2 {
+        color: whitesmoke;
+        margin-top: 180px;
+        margin-left: 150px;
+        text-shadow: 1px 1px 1px rgb(252, 169, 3);
+        font-size: 40px;
+        font-family: 'poppins', sans-serif;
+
+
+    }
+
+    .src1 {
+        margin-left: 780px;
+        margin-top: -550px;
+        border: 1px solid whitesmoke;
+        border-radius: 20em;
+        height: 751px;
+        width: 500px;
+
+
+    }
+
+
+    h1 {
+        font-size: 17px;
+        color: rgb(248, 241, 228);
+        font-family: 'poppins', sans-serif;
+        margin-left: 150px;
+        margin-top: 70px;
+        line-height: 27px;
+    }
+
+    .svg1 {
+        margin-left: -10px;
+        width: 1370px;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'kanit', sans-serif;
+        color: black;
+        font-size: 44px;
+        margin-top: -10px;
+
+    }
+
+    .src2 {
+        width: 500px;
+        height: 600px;
+        border-radius: 10em;
+        margin-left: 140px;
+        border-bottom: 15px solid rgb(252, 51, 85);
+    }
+
+    .box1 {
+        width: 600px;
+        height: 200px;
+        margin-left: 640px;
+        margin-top: -460px;
+        background-color: rgb(0, 41, 0);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    h4 {
+        font-family: 'kanit', sans-serif;
+        font-size: 32px;
+        color: rgb(245, 221, 225);
+        text-align: center;
+        padding-top: 80px;
+
+    }
+
+    .box2 {
+        width: 600px;
+        height: 200px;
+        margin-left: 140px;
+        margin-top: -460px;
+        background-color: rgb(1, 1, 94);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .src3 {
+        width: 500px;
+        height: 600px;
+        border-radius: 10em;
+        margin-left: 740px;
+        margin-top: 200px;
+        border-bottom: 15px solid rgb(1, 1, 94);
+    }
+
+
+
+    .src4 {
+        width: 500px;
+        height: 600px;
+        border-radius: 10em;
+        margin-left: 140px;
+        margin-top: 225px;
+        border-bottom: 15px solid purple;
+    }
+
+    .box3 {
+        width: 600px;
+        height: 200px;
+        margin-left: 640px;
+        margin-top: -470px;
+        background-color: rgb(78, 1, 78);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+
+
+    .box4 {
+        width: 600px;
+        height: 200px;
+        margin-left: 140px;
+        margin-top: -460px;
+        background-color: rgb(161, 1, 55);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .src5 {
+        width: 500px;
+        height: 600px;
+        border-radius: 10em;
+        margin-left: 740px;
+        margin-top: 210px;
+        border-bottom: 15px solid rgb(161, 1, 55);
+    }
+
+
+
+
+    .src6 {
+        width: 500px;
+        height: 600px;
+        border-radius: 10em;
+        margin-left: 140px;
+        margin-top: 220px;
+        border-bottom: 15px solid rgb(62, 128, 2);
+    }
+
+    .box5 {
+        width: 600px;
+        height: 200px;
+        margin-left: 640px;
+        margin-top: -460px;
+        background-color: rgb(62, 128, 2);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .src8 {
+        width: 560px;
+        height: 400px;
+        margin-left: 100px;
+        border-radius: 10px;
+        margin-top: 460px;
+    }
+
+    .src8:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+    h5 {
+        margin-top: -450px;
+        margin-left: 700px;
+        color: black;
+        font-size: 40px;
+        font-family: 'poppins', sans-serif;
+
+    }
+
+    header {
+
+        margin-left: 700px;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: -40px;
+        line-height: 26px;
+    }
+
+    .svg2 {
+        margin-left: -10px;
+        margin-top: 40px;
+        width: 1370px;
+    }
+
+    .box6 {
+        background-color: black;
+        width: 1400px;
+        height: 1000px;
+        margin-top: -49px;
+        margin-left: -10px;
+        text-align: center;
+    }
+
+    h6 {
+        text-align: center;
+        font-family: 'kanit', sans-serif;
+        color: whitesmoke;
+        font-size: 40px;
+        margin-top: 20px;
+
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: transparent;
+        width: 900px;
+        margin-left: 230px;
+        margin-top: -22px;
+    }
+
+    .flex-container>div {
+        width: 550px;
+        height: 350px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .src9 {
+        width: 70px;
+        height: 70px;
+        border-radius: 20em;
+        margin-top: 30px;
+        margin-left: -130px;
+    }
+
+    .src10 {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+        border-radius: 20em;
+        margin-left: -130px;
+
+    }
+
+    .src11 {
+        width: 80px;
+        height: 80px;
+        border-radius: 20em;
+        margin-top: 30px;
+        margin-left: -130px;
+
+    }
+
+    main {
+        color: whitesmoke;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 22px;
+        padding: 20px;
+        line-height: 22px;
+        padding-top: 50px;
+        text-align: justify;
+        text-justify: inter-word;
+
+    }
+</style>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="#SSJ STITCHES"> SSJ STITCHES
+        </a>
+        <p><a href="#Contact">Contact </a></p>
+        <p><a href="#How It Works">How it works</a></p>
+        <p><a href="#Advantages">Advantages</a></p>
+        <p><a href="#About">About</a></p>
+        <p><a href="#Products">Products</a></p>
+        <a href="javascript:void(0):" class="icon" onclick="myFunction()">
+        </a>
+        <h2>Come Get yourself adorned by<br> SSJ STITCHES - Ore City's Finest <br>Fashion Designer!</h2>
+        <h1>SSJ Stitches offers the finest in modern fashion design, <br> blending high-quality fabrics with unique
+            silhouettes to<br> create the perfect look.
+            SSJ Stitches prides itself on offering the <br>ultimate in modern fashion design. <br>With our
+            commitment to
+            high-quality fabrics, unique silhouettes, <br>and meticulous craftsmanship, <br>
+            we guarantee that our customers will always <br>find the perfect look for them.</h1>
+        <img class="src1" src="https://i.pinimg.com/736x/47/e9/3c/47e93c4033b61aabd58c3d690453b035.jpg">
+        <img class="src1" src="https://i.pinimg.com/564x/5a/0c/26/5a0c26270fdef843caa04a6d147ba0a1.jpg">
+        <img class="src1" src="C:\Users\User\Downloads\WhatsApp Image 2023-12-26 at 21.56.01.jpeg">
+        <img class="src1" src="C:\Users\User\Downloads\WhatsApp Image 2023-12-26 at 21.56.00.jpeg">
+        <img class="src1" src="C:\Users\User\Downloads\WhatsApp Image 2023-12-26 at 21.54.16.jpeg">
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("src1");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 3 seconds
+            }
+
+        </script>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+        </script>
+    </div>
+    </div>
+    <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000000" fill-opacity="1"
+            d="M0,224L15,224C30,224,60,224,90,213.3C120,203,150,181,180,165.3C210,149,240,139,270,149.3C300,160,330,192,360,186.7C390,181,420,139,450,138.7C480,139,510,181,540,202.7C570,224,600,224,630,218.7C660,213,690,203,720,181.3C750,160,780,128,810,144C840,160,870,224,900,229.3C930,235,960,181,990,176C1020,171,1050,213,1080,208C1110,203,1140,149,1170,117.3C1200,85,1230,75,1260,106.7C1290,139,1320,213,1350,218.7C1380,224,1410,160,1425,128L1440,96L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z">
+        </path>
+    </svg>
+    <h3>
+        <p id="Products">Products
+    </h3>
+    </p>
+    <img class="src2"
+        src="https://dev-users-files.s3.us-east-2.amazonaws.com/ce9613e9-c219-4241-8b2e-19e696827d65/image_cropper_1701135539061.png">
+    <div class="box1">
+        <h4>Simple Chic Chiffon Dress</h4>
+    </div>
+
+    <img class="src3"
+        src="https://dev-users-files.s3.us-east-2.amazonaws.com/ce9613e9-c219-4241-8b2e-19e696827d65/image_cropper_1701135392717.png">
+    <div class="box2">
+        <h4>Owanbe Ankara Styles</h4>
+    </div>
+
+    <img class="src4"
+        src="https://dev-users-files.s3.us-east-2.amazonaws.com/ce9613e9-c219-4241-8b2e-19e696827d65/image_cropper_1701135517382.png">
+    <div class="box3">
+        <h4>Owanbe Lace Styles</h4>
+    </div>
+
+    <img class="src5" src="https://i.pinimg.com/564x/d5/f0/bc/d5f0bcfd57e305a5f90400c984c823c8.jpg">
+    <div class="box4">
+        <h4>Elegant Wedding dresses</h4>
+    </div>
+
+    <img class="src6" src="https://i.pinimg.com/564x/46/6b/1f/466b1fd0a77cf85aad1429322db441bd.jpg">
+    <div class="box5">
+        <h4>White Button Down Jumpsuit</h4>
+    </div>
+
+
+    <img class="src8" src="C:\Users\User\Downloads\WhatsApp Image 2023-12-28 at 20.50.14.jpeg">
+    <h5>
+        <p id="About"> About The Company
+    </h5>
+    </p>
+    <header>SSJ STITCHES is a fashion design company that<br> specializes in creating stylish,
+        handmade
+        garments <br> and accessories for the modern woman. We prioritize<br> quality craftsmanship and individualized
+        customer
+        service,<br> creating unique and tailored pieces for each order. <br>Our pieces combine cutting edge fashion
+        with
+        timeless classics <br> to create truly stunning clothing. <br> SSJ Stitches is a brand that takes pride in
+        offering the
+        utmost <br> excellence in contemporary fashion design. With a focus on <br> providing customers with
+        cutting-edge style,
+        we seamlessly<br> blend top-notch fabrics with innovative silhouettes to deliver the <br>perfect ensemble for
+        any
+        occasion.
+
+    </header>
+    <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="black" fill-opacity="1"
+            d="M0,64L48,74.7C96,85,192,107,288,101.3C384,96,480,64,576,90.7C672,117,768,203,864,213.3C960,224,1056,160,1152,122.7C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <div class="box6">
+        <h6>
+            <p id="Advantages"> Advantages
+        </h6>
+        </p>
+        <div class="flex-container">
+            <div style="background-color: rgb(103, 4, 168);">
+                <img class="src9"
+                    src="data:image/png;base64,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
+                +YM+B6oJg58DC7mfC4CBMEf0iUyJI0ZUEGdzLjRvn4BlOii4lyGil6FaCjIaie4INRRcFa4puClYUXbvIlPxs/a4myMhIFEb6DwpHYHGIDlceSvwf/xVSwGgXjegAAAAASUVORK5CYII=">
+                <main>Our experienced team offers custom clothing designs to ensure unique and stylish looks.
+                </main>
+            </div>
+            <div style="background-color: yellow;">
+                <img class="src10" src="https://i.pinimg.com/474x/59/68/4f/59684ffda8ef0843762b689f1e32959c.jpg">
+                <main style="color: black" ;>We deliver quality and neat clothing shipped straight to their door.
+                </main>
+            </div>
+            <div style="background-color: orangered;">
+                <img class="src11" src="https://i.pinimg.com/736x/34/6a/1f/346a1f4363e1b59f6860fdce6abc1082.jpg">
+                <main>Our friendly and knowledgeable staff are dedicated to providing individual attention to every
+                    customer.
+
+                </main>
+            </div>
+
+        </div>
+
+
+</body>
+
+
+</html>
