@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gourmet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(234, 223, 208);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        hr {
+            border-color: rgb(42, 28, 6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-sand w3-padding w3-card" style="letter-spacing:4px; font-size: 19px; ">
+            <a href="#home" class="w3-bar-item w3-button w3-sand w3-sans-serif">Gourmet Galore</a>
+            <div class="w3-right w3-hide-small w3-sand">
+                <a href="#about" class="w3-bar-item w3-button w3-sans-serif">About</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-sans-serif">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-sans-serif">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image w3-opacity-min w3-animate-zoom" src="https://i.ytimg.com/vi/adkZ8IQqq4Q/maxresdefault.jpg"
+            alt="Hamburger Catering" width="1600" height="800">
+        <div class="w3-display-middle w3-padding-large w3-opacity w3-small">
+            <h1 class="w3-xlarge w3-cursive w3-black w3-padding w3-border-black w3-round">Welcome to Gourmet Galore!
+                Discover
+                delicious recipes, culinary tips, and food inspirations.....Join us in exploring Gourmet Galore.</h1>
+        </div>
+    </header>
+
+    <div class="w3-content" style="max-width:1100px">
+
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large">
+                <img src="https://thefoodcharlatan.com/wp-content/uploads/2023/04/Spaghetti-Sauce-Recipe-6.jpg"
+                    class="w3-round w3-image" alt="Table Setting" width="600" height="750" style="margin-top: 60px;">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center w3-sans-serif" style="margin-top: 125px;">About
+                    Gourmet</h1><br>
+                <h5 class="w3-center w3-cursive">Tradition since 1889</h5>
+                <p class="w3-large">The Catering was founded in 1889 by Ms New world. Welcome to Gourmet Galore, your
+                    ultimate
+                    destination for all things culinary. Here, we celebrate the art of cooking and the joy of eating
+                    with a
+                    collection of mouth-watering recipes, expert cooking tips, and creative food inspirations. Whether
+                    you're a
+                    seasoned chef or a home cook, our site offers something for everyone. Dive into our diverse range of
+                    dishes,
+                    from quick and easy weeknight meals to elaborate gourmet feasts. Join us in exploring new flavors
+                    and
+                    techniques that will transform your kitchen into a culinary haven. At Gourmet Galore, every meal is
+                    an
+                    adventure</p>
+
+                <p class="w3-large w3-text-dark w3-hide-medium"> Explore our food blogs for the latest trends,
+                    ingredient
+                    highlights, and cooking hacks that will inspire your kitchen creativity. Plus, our vibrant community
+                    of food
+                    lovers provides a platform to share your culinary successes and discover new favorites. Dive in and
+                    savor the
+                    joys of Gourmet Galore!</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center w3-cursive">Our Menu</h1><br>
+                <h4>Burger bread</h4>
+                <p class="w3-text-grey">Freshly baked burger bread</p><br>
+
+                <h4>Pasta</h4>
+                <p class="w3-text-grey">peppered pasta with fish and meat</p><br>
+
+                <h4>Cold stone</h4>
+                <p class="w3-text-grey">Vanilla flavored batter</p><br>
+
+                <h4>Pizza</h4>
+                <p class="w3-text-grey">Pizza, sausage and veges.</p><br>
+
+                <h4> Pancakes</h4>
+                <p class="w3-text-grey">With syrup, butter and lots of berries </p>
+            </div>
+
+            <div class="w3-col l6 w3-padding-large ">
+                <img src="https://www.julieseatsandtreats.com/wp-content/uploads/2020/06/Rainbow-Ice-Cream-14-of-16.jpg"
+                    class="w3-round w3-image w3-spin" alt="Menu" style="width:100%">
+            </div>
+        </div>
+
+        <hr>
+
+
+
+        <div class="w3-container">
+            <p>We provide full-service catering for any event, large or small. Our team understands your unique needs
+                and
+                ensures that the food we serve not only looks amazing but also tastes delicious. We cater to the highest
+                standards to make your event memorable. Don't hesitate to reach out to us for exceptional catering
+                services that
+                will impress your guests.</p>
+        </div>
+
+        <div class="w3-container w3-column-padding">
+            <div class="w3-card-4" style="width:100%">
+                <img src="https://cdn.jwplayer.com/v2/media/l2dpvDTO/poster.jpg?width=720" alt="Alps" style="width:100%"
+                    class="w3-hover-opacity ">
+                <div class="w3-container w3-center">
+                    <p>Banana pancakes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-column-padding">
+            <div class="w3-card-4" style="width:100%">
+                <img src="https://prettysimplesweet.com/wp-content/uploads/2021/04/chocolate-birthday-cake.jpg"
+                    alt="Alps" style="width:100%" class="w3-hover-opacity w3-margin-top">
+                <div class="w3-container w3-center">
+                    <p>Chocolate Cake</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-column-padding">
+            <div class="w3-card-4" style="width:100%">
+                <img src="https://www.allrecipes.com/thmb/0xH8n2D4cC97t7mcC7eT2SDZ0aE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_2x1_1725-fdaa76496da045b3bdaadcec6d4c5398.jpg"
+                    alt="Alps" style="width:100%" class="w3-hover-opacity w3-margin-top">
+                <div class="w3-container w3-center">
+                    <p>N0-Rise Pizza Dough</p>
+                </div>
+            </div>
+        </div>
+
+        <h1></h1><br>
+        <div class="w3-container" id="contact">
+            <h1></h1><br>
+            <div class="w3-container w3-sand w3-center w3-margin-top">
+                <p>You can also contact us on whatsapp <a href="https://wa.me/+2349135419311">+2349135419311</a></p>
+            </div>
+        </div>
+
+        </footer>
+    </div>
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gourmet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(234, 223, 208);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        hr {
+            border-color: rgb(42, 28, 6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-sand w3-padding w3-card" style="letter-spacing:4px; font-size: 19px; ">
+            <a href="#home" class="w3-bar-item w3-button w3-sand w3-sans-serif">Gourmet Galore</a>
+            <div class="w3-right w3-hide-small w3-sand">
+                <a href="#about" class="w3-bar-item w3-button w3-sans-serif">About</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-sans-serif">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-sans-serif">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image w3-opacity-min w3-animate-zoom" src="https://i.ytimg.com/vi/adkZ8IQqq4Q/maxresdefault.jpg"
+            alt="Hamburger Catering" width="1600" height="800">
+        <div class="w3-display-middle w3-padding-large w3-opacity w3-small">
+            <h1 class="w3-xlarge w3-cursive w3-black w3-padding w3-border-black w3-round">Welcome to Gourmet Galore!
+                Discover
+                delicious recipes, culinary tips, and food inspirations.....Join us in exploring Gourmet Galore.</h1>
+        </div>
+    </header>
+
+    <div class="w3-content" style="max-width:1100px">
+
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large">
+                <img src="https://thefoodcharlatan.com/wp-content/uploads/2023/04/Spaghetti-Sauce-Recipe-6.jpg"
+                    class="w3-round w3-image" alt="Table Setting" width="600" height="750" style="margin-top: 60px;">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center w3-sans-serif" style="margin-top: 125px;">About
+                    Gourmet</h1><br>
+                <h5 class="w3-center w3-cursive">Tradition since 1889</h5>
+                <p class="w3-large">The Catering was founded in 1889 by Ms New world. Welcome to Gourmet Galore, your
+                    ultimate
+                    destination for all things culinary. Here, we celebrate the art of cooking and the joy of eating
+                    with a
+                    collection of mouth-watering recipes, expert cooking tips, and creative food inspirations. Whether
+                    you're a
+                    seasoned chef or a home cook, our site offers something for everyone. Dive into our diverse range of
+                    dishes,
+                    from quick and easy weeknight meals to elaborate gourmet feasts. Join us in exploring new flavors
+                    and
+                    techniques that will transform your kitchen into a culinary haven. At Gourmet Galore, every meal is
+                    an
+                    adventure</p>
+
+                <p class="w3-large w3-text-dark w3-hide-medium"> Explore our food blogs for the latest trends,
+                    ingredient
+                    highlights, and cooking hacks that will inspire your kitchen creativity. Plus, our vibrant community
+                    of food
+                    lovers provides a platform to share your culinary successes and discover new favorites. Dive in and
+                    savor the
+                    joys of Gourmet Galore!</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center w3-cursive">Our Menu</h1><br>
+                <h4>Burger bread</h4>
+                <p class="w3-text-grey">Freshly baked burger bread</p><br>
+
+                <h4>Pasta</h4>
+                <p class="w3-text-grey">peppered pasta with fish and meat</p><br>
+
+                <h4>Cold stone</h4>
+                <p class="w3-text-grey">Vanilla flavored batter</p><br>
+
+                <h4>Pizza</h4>
+                <p class="w3-text-grey">Pizza, sausage and veges.</p><br>
+
+                <h4> Pancakes</h4>
+                <p class="w3-text-grey">With syrup, butter and lots of berries </p>
+            </div>
+
+            <div class="w3-col l6 w3-padding-large ">
+                <img src="https://www.julieseatsandtreats.com/wp-content/uploads/2020/06/Rainbow-Ice-Cream-14-of-16.jpg"
+                    class="w3-round w3-image w3-spin" alt="Menu" style="width:100%">
+            </div>
+        </div>
+
+        <hr>
+
+
+
+        <div class="w3-container">
+            <p>We provide full-service catering for any event, large or small. Our team understands your unique needs
+                and
+                ensures that the food we serve not only looks amazing but also tastes delicious. We cater to the highest
+                standards to make your event memorable. Don't hesitate to reach out to us for exceptional catering
+                services that
+                will impress your guests.</p>
+        </div>
+
+        <div class="w3-container w3-column-padding">
+            <div class="w3-card-4" style="width:100%">
+                <img src="https://cdn.jwplayer.com/v2/media/l2dpvDTO/poster.jpg?width=720" alt="Alps" style="width:100%"
+                    class="w3-hover-opacity ">
+                <div class="w3-container w3-center">
+                    <p>Banana pancakes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-column-padding">
+            <div class="w3-card-4" style="width:100%">
+                <img src="https://prettysimplesweet.com/wp-content/uploads/2021/04/chocolate-birthday-cake.jpg"
+                    alt="Alps" style="width:100%" class="w3-hover-opacity w3-margin-top">
+                <div class="w3-container w3-center">
+                    <p>Chocolate Cake</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-column-padding">
+            <div class="w3-card-4" style="width:100%">
+                <img src="https://www.allrecipes.com/thmb/0xH8n2D4cC97t7mcC7eT2SDZ0aE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_2x1_1725-fdaa76496da045b3bdaadcec6d4c5398.jpg"
+                    alt="Alps" style="width:100%" class="w3-hover-opacity w3-margin-top">
+                <div class="w3-container w3-center">
+                    <p>N0-Rise Pizza Dough</p>
+                </div>
+            </div>
+        </div>
+
+        <h1></h1><br>
+        <div class="w3-container" id="contact">
+            <h1></h1><br>
+            <div class="w3-container w3-sand w3-center w3-margin-top">
+                <p>You can also contact us on whatsapp <a href="https://wa.me/+2349135419311">+2349135419311</a></p>
+            </div>
+        </div>
+
+        </footer>
+    </div>
+    </div>
+
+</body>
+
+</html>
